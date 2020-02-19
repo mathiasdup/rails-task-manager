@@ -1,0 +1,11 @@
+<h1><%= @taskshow.title %></h1>
+
+<p><%= @taskshow.details %></p>
+
+  <% if @taskshow.completed == true %>
+    <input type="checkbox" checked>
+    <p> "This task is done"
+  <% else %>
+    <input type="checkbox">
+    <p> "You have to do it boy"
+  <% end %>
